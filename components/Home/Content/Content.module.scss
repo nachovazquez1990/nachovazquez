@@ -1,0 +1,115 @@
+@import '../../../styles/variables.scss';
+.mainContent{
+    position: relative;
+    .band{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: $home-band-width;
+        background-color: $color1;
+        color: white;
+        .number{
+            position: absolute;
+            font-size: 620px;
+            font-weight: 600;
+            top: -20px;
+            right: -110px;
+        }
+        .content{
+            position: absolute;
+            left: 80px;
+            bottom: 60px;
+            width: 450px;
+            h3{
+                width: 350px;
+                font-size: 90px;
+                text-transform: uppercase;
+                font-weight: 600;
+                line-height: 72px;
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .mainContent{
+        .band{
+            width: $home-band-responsive1-width;
+        }
+    }   
+}
+@media (max-width: 1080px) {
+    .mainContent{
+        .band{
+            width: $home-band-responsive2-width;
+            .content{
+                left: 80px;
+                bottom: 20px;
+                width: 450px;
+                h3{
+                    width: 350px;
+                    font-size: 90px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    line-height: 72px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .mainContent{
+        .band{
+            .number{
+                font-size: 520px;
+                top: -100px;
+                right: -90px;
+            }
+            .content{
+                top: 30px;
+                h3{
+                    font-size: 80px;
+                    line-height: 65px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-size: 22px;
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 600px) {
+    .mainContent{
+        .band{
+            .number{
+                font-size: 300px;
+                top: -50px;
+                right: -55px;
+            }
+            .content{
+                top: 60px;
+                left: $body-x-margin-responsive;
+                h3{
+                    width: 200px;
+                    font-size: 60px;
+                    line-height: 50px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    width: 275px;
+                    font-size: 18px;
+                }
+            }
+        }
+    } 
+}
