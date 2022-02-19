@@ -5,7 +5,7 @@ export default function SEO(props) {
     const [href, setHref] = useState();
     useEffect(() => {
         setHref(window.location.href);
-    });
+    }, []);
     return (
         <Head>
             <meta charSet="utf-8" />
@@ -26,8 +26,8 @@ export default function SEO(props) {
             {/* <meta name="twitter:image" content={props.seoContenido.seoImage} />  */}
             <meta name="twitter:url" content={href} />
             <meta name="twitter:card" content="summary" />
-            <meta itemprop="name" content="Nacho Vázquez" />
-            <meta itemprop="url" content={href} />
+            <meta itemProp="name" content="Nacho Vázquez" />
+            <meta itemProp="url" content={href} />
             {/* <meta itemprop="thumbnailUrl" content={props.seoContenido.seoImage} /> */}
         </Head>
     )
