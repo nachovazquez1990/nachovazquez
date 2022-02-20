@@ -11,10 +11,20 @@
         color: white;
         .number{
             position: absolute;
-            font-size: 620px;
+            font-size: 580px;
             font-weight: 600;
             top: -20px;
             right: -110px;
+        }
+        .number.dos{
+            top: auto;
+            bottom: -180px;
+        }
+        .number.tres{
+            top: auto;
+            bottom: -180px;
+            right: auto;
+            left: -60px;
         }
         .content{
             position: absolute;
@@ -22,7 +32,7 @@
             bottom: 60px;
             width: 450px;
             h3{
-                width: 350px;
+                width: 380px;
                 font-size: 90px;
                 text-transform: uppercase;
                 font-weight: 600;
@@ -33,6 +43,17 @@
                 font-size: 24px;
             }
         }
+        .content.dos{
+            left: 100px;
+            bottom: auto;
+            top: 200px;
+        }
+        .content.tres{
+            left: auto;
+            right: 5px;
+            bottom: auto;
+            top: 150px;
+        }
     }
 }
 
@@ -40,6 +61,11 @@
     .mainContent{
         .band{
             width: $home-band-responsive1-width;
+            .content.dos{
+                left: 50px;
+                bottom: auto;
+                top: 100px;
+            }
         }
     }   
 }
@@ -48,19 +74,33 @@
         .band{
             width: $home-band-responsive2-width;
             .content{
-                left: 80px;
-                bottom: 20px;
+                left: $body-x-margin-responsive;
+                bottom: auto;
+                top: $body-y-margin-responsive;
                 width: 450px;
                 h3{
                     width: 350px;
-                    font-size: 90px;
+                    font-size: 80px;
                     text-transform: uppercase;
                     font-weight: 600;
-                    line-height: 72px;
+                    line-height: 65px;
                     margin-bottom: 5px;
                 }
                 p{
-                    font-size: 24px;
+                    font-size: 20px;
+                }
+            }
+            .content.dos{
+                left: $body-x-margin-responsive;
+                bottom: auto;
+                top: $body-y-margin-responsive;
+            }
+            .content.tres{
+                right: $body-x-margin-responsive;
+                bottom: auto;
+                top: $body-y-margin-responsive;
+                p{
+                    width: 330px;
                 }
             }
         }
@@ -74,15 +114,12 @@
                 top: -100px;
                 right: -90px;
             }
-            .content{
-                top: 30px;
-                h3{
-                    font-size: 80px;
-                    line-height: 65px;
-                    margin-bottom: 5px;
-                }
+            .content.tres{
+                right: -100px;
+                bottom: auto;
+                top: $body-y-margin-responsive;
                 p{
-                    font-size: 22px;
+                    width: 330px;
                 }
             }
         }
@@ -96,6 +133,18 @@
                 top: -50px;
                 right: -55px;
             }
+            .number.dos{
+                font-size: 280px;
+                bottom: auto;
+                top:-50px;
+                right: -55px;
+            }
+            .number.tres{
+                font-size: 320px;
+                bottom: -70px;
+                left: auto;
+                right: -50px;
+            }
             .content{
                 top: $body-y-margin-responsive;
                 left: $body-x-margin-responsive;
@@ -108,6 +157,24 @@
                 p{
                     width: 275px;
                     font-size: 17px;
+                }
+            }
+            .content.dos{
+                h3{
+                    width: 250px;
+                }
+                p{
+                    width: 230px;
+                }
+            }
+            .content.tres{
+                right: auto;
+                left: $body-x-margin-responsive;
+                h3{
+                    width: 250px;
+                }
+                p{
+                    width: 250px;
                 }
             }
         }

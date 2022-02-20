@@ -25,6 +25,20 @@
             display: block;
         }
     }
+    h2.dos{
+        font-size: 165px;
+        line-height: 115px;
+        span{
+            font-size: 188px;
+        }
+    }
+    h2.tres{
+        font-size: 190px;
+        line-height: 116px;
+        span{
+            font-size: 163px;
+        }
+    }
 }
 
 @media (max-width: 1600px) {
@@ -38,6 +52,56 @@
             font-size: 135px;
             line-height: 90px;
         }
+        h2.dos{
+            font-size: 135px;
+            line-height: 95px;
+            span{
+                font-size: 155px;
+            }
+        }
+        h2.tres{
+            font-size: 155px;
+            line-height: 98px;
+            span{
+                font-size: 133px;
+            }
+        }
+    }
+}
+@media (max-width: 1500px) {
+    .title{
+        h2.dos{
+            font-size: 115px;
+            line-height: 85px;
+            span{
+                font-size: 132px;
+            }
+        }
+        h2.tres{
+            font-size: 135px;
+            line-height: 80px;
+            span{
+                font-size: 116px;
+            }
+        }
+    }
+}
+@media (max-width: 1380px) {
+    .title{
+        h2.dos{
+            font-size: 90px;
+            line-height: 65px;
+            span{
+                font-size: 103px;
+            }
+        }
+        h2.tres{
+            font-size: 110px;
+            line-height: 66px;
+            span{
+                font-size: 95px;
+            }
+        }
     }
 }
 @media (max-width: 1080px) {
@@ -47,6 +111,7 @@
     .title{
         top: auto;
         bottom: 50px;
+        left: $body-x-margin-responsive;
         h1{
             font-size: 50px;
             margin-bottom: 5px;
@@ -56,6 +121,20 @@
             line-height: 100px;
             margin-left: -9px;
         }
+        h2.dos{
+            font-size: 130px;
+            line-height: 95px;
+            span{
+                font-size: 149px;
+            }
+        }
+        h2.tres{
+            font-size: 160px;
+            line-height: 98px;
+            span{
+                font-size: 138px;
+            }
+        }
     }
 }
 @media (max-width: 600px) {
@@ -64,8 +143,7 @@
     }
     .title{
         top: auto;
-        left: $body-x-margin-responsive;
-        bottom: 70px;
+        bottom: 90px;
         h1{
             font-size: 35px;
             margin-bottom: 5px;
@@ -74,6 +152,20 @@
             font-size: 100px;
             line-height: 66px;
             margin-left: -5px;
+        }
+        h2.dos{
+            font-size: 74px;
+            line-height: 50px;
+            span{
+                font-size: 85px;
+            }
+        }
+        h2.tres{
+            font-size: 93px;
+            line-height: 60px;
+            span{
+                font-size: 80px;
+            }
         }
     }
 }
