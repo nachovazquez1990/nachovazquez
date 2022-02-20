@@ -12,29 +12,20 @@
   z-index: 10;
   text-transform: uppercase;
 }
-.langs{
-  display: flex;
-  font-size: 30px;
-  color: $color1;
-  li:first-of-type::after{
-    content: "-";
-    margin: 0 5px;
-  }
-}
 .pages{
   display: flex;
   align-items: center;
-  color: white;
+  color: $blanco;
   font-size: 24px;
   li{
     a{
       padding-bottom: 3px;
     }
     a:hover{
-      border-bottom: 5px solid white;
+      border-bottom: 5px solid $blanco;
     }
     a.active{
-      border-bottom: 5px solid white;
+      border-bottom: 5px solid $blanco;
     }
   }
   li::before{
@@ -50,7 +41,18 @@
     top: -5px
   }
 }
-
+.langs{
+  display: flex;
+  font-size: 30px;
+  color: $color1;
+  li{
+    cursor: pointer;
+  }
+  li:first-of-type::after{
+    content: "-";
+    margin: 0 5px;
+  }
+}
 
 /* Responsive */
 .toggleMenu_box{

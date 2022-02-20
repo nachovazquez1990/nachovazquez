@@ -1,10 +1,14 @@
 import Link from 'next/link';
-import { useState, Fragment } from 'react';
+import { useState, Fragment, useEffect } from 'react';
 import { useRouter } from "next/router";
 
 import styles from './Menu.module.scss';
+const HomeAnimations = require('../../../utils/animations/Home_animations');
 
 export default function Menu() {
+    useEffect(() => {
+        HomeAnimations.startMenu(styles.menu);
+    }, []);
     const router = useRouter();
     const [toggleIcon, setToggleIcon] = useState(`${styles.toggleMenu}`);
     const [toggleBox, setToggleBox] = useState(`${styles.menu_responsive}`);
@@ -29,22 +33,22 @@ export default function Menu() {
                 <ul className={styles.pages}>
                     <li>
                         <Link href="/">
-                            <a className={router.pathname == "/" ? "active" : ""}>Home</a>
+                            <a className={router.pathname == "/" ? `${styles.active}` : ""}>Home</a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/">
-                            <a className={router.pathname == "/about" ? "active" : ""}>About me</a>
+                            <a className={router.pathname == "/about" ? `${styles.active}` : ""}>About me</a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/">
-                            <a className={router.pathname == "/work" ? "active" : ""}>Work</a>
+                            <a className={router.pathname == "/work" ? `${styles.active}` : ""}>Work</a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/">
-                            <a className={router.pathname == "/contact" ? "active" : ""}>Contact</a>
+                            <a className={router.pathname == "/contact" ? `${styles.active}` : ""}>Contact</a>
                         </Link>
                     </li>
                 </ul>
