@@ -6,7 +6,7 @@ export default function Pagination(props) {
             {
                 props.ITEMS.map(mainItem =>
                     <span
-                        id={mainItem.id}
+                        key={mainItem.id}
                         className={props.mainPosition == `${mainItem.id}` ? `${styles.active}` : ""}
                         onClick={() => props.handlePosition(mainItem.id - 1)}
                     ></span>
