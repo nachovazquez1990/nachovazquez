@@ -32,14 +32,16 @@ export function exitBandAnimation(target) {
     targets: `.${target}`,
     translateX: 800,
     duration: 1000,
+    direction: 'alternate',
     easing: 'easeInOutSine'
   });
 }
 export function exitTitleAnimation(target) {
   anime({
     targets: `.${target}`,
-    translateY: -800,
+    translateY: 800,
     duration: 1000,
-    easing: 'easeInOutSine'
+    direction: 'alternate',
+    easing: 'easeInOutSine',
   });
 }

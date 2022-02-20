@@ -1,0 +1,46 @@
+{
+    "menu_en": [
+        {
+            "id": 1,
+            "item": "Home",
+            "link": "/"
+        },
+        {
+            "id": 2,
+            "item": "About me",
+            "link": "/about"
+        },
+        {
+            "id": 3,
+            "item": "Work",
+            "link": "/work"
+        },
+        {
+            "id": 4,
+            "item": "Contact",
+            "link": "/contact"
+        }
+    ],
+    "menu_es": [
+        {
+            "id": 1,
+            "item": "Inicio",
+            "link": "/"
+        },
+        {
+            "id": 2,
+            "item": "Bio",
+            "link": "/about"
+        },
+        {
+            "id": 3,
+            "item": "Trabajo",
+            "link": "/work"
+        },
+        {
+            "id": 4,
+            "item": "Contacto",
+            "link": "/contact"
+        }
+    ]
+}

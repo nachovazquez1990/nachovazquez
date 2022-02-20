@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 
 import styles from './Menu.module.scss';
 const HomeAnimations = require('../../../utils/animations/Home_animations');
+import ITEMS from '../../../api/menu.json';
 
 export default function Menu() {
     useEffect(() => {
@@ -27,30 +28,19 @@ export default function Menu() {
         <Fragment>
             <nav className={styles.menu}>
                 <ul className={styles.langs}>
-                    <li>SPA</li>
-                    <li>ENG</li>
+                    <li><a className={styles.selected}>ENG</a></li>
+                    <li><a>SPA</a></li>
                 </ul>
                 <ul className={styles.pages}>
-                    <li>
-                        <Link href="/">
-                            <a className={router.pathname == "/" ? `${styles.active}` : ""}>Home</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/">
-                            <a className={router.pathname == "/about" ? `${styles.active}` : ""}>About me</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/">
-                            <a className={router.pathname == "/work" ? `${styles.active}` : ""}>Work</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/">
-                            <a className={router.pathname == "/contact" ? `${styles.active}` : ""}>Contact</a>
-                        </Link>
-                    </li>
+                    {
+                        ITEMS.menu_en.map(menuItem =>
+                            <li key={menuItem.id}>
+                                <Link href={menuItem.link}>
+                                    <a className={router.pathname == `${menuItem.link}` ? `${styles.active}` : ""}>{menuItem.item}</a>
+                                </Link>
+                            </li>
+                        )
+                    }
                 </ul>
             </nav>
 
@@ -66,30 +56,16 @@ export default function Menu() {
                 </div>
 
                 <ul className={toggleBox}>
-                    <li onClick={() => toggleMenu()}>
-                        <Link href="/">
-                            <a>Home</a>
-                        </Link>
-                        <div className={router.pathname == "/" ? `${styles.menu_activebar}` : `${styles.menu_hoverbar}`}></div>
-                    </li>
-                    <li onClick={() => toggleMenu()}>
-                        <Link href="/">
-                            <a>About me</a>
-                        </Link>
-                        <div className={router.pathname == "/about" ? `${styles.menu_activebar}` : `${styles.menu_hoverbar}`}></div>
-                    </li>
-                    <li onClick={() => toggleMenu()}>
-                        <Link href="/">
-                            <a>Work</a>
-                        </Link>
-                        <div className={router.pathname == "/work" ? `${styles.menu_activebar}` : `${styles.menu_hoverbar}`}></div>
-                    </li>
-                    <li onClick={() => toggleMenu()}>
-                        <Link href="/">
-                            <a>Contact</a>
-                        </Link>
-                        <div className={router.pathname == "/contact" ? `${styles.menu_activebar}` : `${styles.menu_hoverbar}`}></div>
-                    </li>
+                    {
+                        ITEMS.menu_en.map(menuItem =>
+                            <li key={menuItem.id} onClick={() => toggleMenu()}>
+                                <Link href={menuItem.link}>
+                                    <a>{menuItem.item}</a>
+                                </Link>
+                                <div className={router.pathname == `${menuItem.link}` ? `${styles.menu_activebar}` : `${styles.menu_hoverbar}`}></div>
+                            </li>
+                        )
+                    }
                     <div className={styles.idiomas}>
                         <p className={styles.selected}>ENG</p>
                         <span>-</span>

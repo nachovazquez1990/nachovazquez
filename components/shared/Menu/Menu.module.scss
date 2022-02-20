@@ -45,12 +45,15 @@
   display: flex;
   font-size: 30px;
   color: $color1;
-  li{
+  li a{
     cursor: pointer;
   }
   li:first-of-type::after{
     content: "-";
     margin: 0 5px;
+  }
+  li a.selected{
+    border-bottom: 6px solid $color1;
   }
 }
 
