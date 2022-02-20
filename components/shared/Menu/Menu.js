@@ -1,15 +1,11 @@
 import Link from 'next/link';
-import { useState, Fragment, useEffect } from 'react';
+import { useState, Fragment } from 'react';
 import { useRouter } from "next/router";
 
 import styles from './Menu.module.scss';
-const HomeAnimations = require('../../../utils/animations/Home_animations');
 import ITEMS from '../../../api/menu.json';
 
 export default function Menu() {
-    useEffect(() => {
-        HomeAnimations.startMenu(styles.menu);
-    }, []);
     const router = useRouter();
     const [toggleIcon, setToggleIcon] = useState(`${styles.toggleMenu}`);
     const [toggleBox, setToggleBox] = useState(`${styles.menu_responsive}`);

@@ -1,47 +1,50 @@
 import anime from 'animejs';
 
-export function startMenu(target) {
-  anime({
-    targets: `.${target}`,
-    opacity: 0,
-    duration: 1200,
+export function startMainAnimation(title, content, menu) {
+  let timeline = anime.timeline({
+    easing: 'easeOutCubic',
     direction: 'reverse',
-    easing: 'easeInOutSine'
+    duration: 500
   });
+
+  timeline
+    .add({
+      targets: `.${menu}`,
+      opacity: 0,
+    })
+    .add({
+      targets: `.${content}`,
+      translateX: 800,
+    })
+    .add({
+      targets: `.${title}`,
+      translateY: -800,
+    })
 }
-export function startBandAnimation(target) {
-  anime({
-    targets: `.${target}`,
-    translateX: 800,
-    duration: 1000,
-    direction: 'reverse',
-    easing: 'easeInOutSine'
+export function exitMainAnimation(title, content, setPosition, position) {
+  let timeline = anime.timeline({
+    easing: 'easeInOutBack',
+    duration: 500
   });
-}
-export function startTitleAnimation(target) {
-  anime({
-    targets: `.${target}`,
-    translateY: -800,
-    duration: 1000,
-    direction: 'reverse',
-    easing: 'easeInOutSine'
-  });
-}
-export function exitBandAnimation(target) {
-  anime({
-    targets: `.${target}`,
-    translateX: 800,
-    duration: 1000,
-    direction: 'alternate',
-    easing: 'easeInOutSine'
-  });
-}
-export function exitTitleAnimation(target) {
-  anime({
-    targets: `.${target}`,
-    translateY: 800,
-    duration: 1000,
-    direction: 'alternate',
-    easing: 'easeInOutSine',
-  });
+
+  timeline
+    .add({
+      targets: `.${content}`,
+      translateX: 800,
+    })
+    .add({
+      targets: `.${title}`,
+      translateY: -800,
+      complete: function () {
+        setPosition(position)
+      }
+    })
+    .add({
+      targets: `.${title}`,
+      translateY: 0,
+    })
+    .add({
+      targets: `.${content}`,
+      translateX: 0,
+    })
 }

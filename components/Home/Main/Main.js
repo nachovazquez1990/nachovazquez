@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import mainStyles from './Main.module.scss';
 import titleStyles from '../Title/Title.module.scss';
 import contentStyles from '../Content/Content.module.scss';
+import menuStyles from '../../shared/Menu/Menu.module.scss';
 import Content from '../Content/Content';
 import Title from '../Title/Title';
 import Pagination from '../../shared/Pagination/Pagination';
@@ -10,11 +11,13 @@ import ITEMS from '../../../api/main.json';
 const HomeAnimations = require('../../../utils/animations/Home_animations');
 
 export default function Main() {
+    useEffect(() => {
+        HomeAnimations.startMainAnimation(titleStyles.title, contentStyles.band, menuStyles.menu);
+    }, []);
+
     const [mainPosition, setMainPosition] = useState(0);
-    async function handlePosition(position) {
-        HomeAnimations.exitTitleAnimation(titleStyles.box);
-        HomeAnimations.exitBandAnimation(contentStyles.band);
-        setMainPosition(position)
+    const handlePosition = async (position) => {
+        HomeAnimations.exitMainAnimation(titleStyles.title, contentStyles.band, setMainPosition, position);
     }
     return (
         <div className={mainStyles.main}>
