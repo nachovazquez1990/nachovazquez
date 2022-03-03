@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import styles from './Menu.module.scss';
 import ITEMS from '../../../api/menu.json';
 
-export default function Menu() {
+export default function Menu(props) {
     const router = useRouter();
     const [toggleIcon, setToggleIcon] = useState(`${styles.toggleMenu}`);
     const [toggleBox, setToggleBox] = useState(`${styles.menu_responsive}`);
@@ -43,7 +43,7 @@ export default function Menu() {
             {/* MENU RESPOINSIVE  */}
             <nav>
                 <div className={styles.toggleMenu_box}>
-                    <div id="toggleIcon" className={toggleIcon} onClick={() => toggleMenu()}>
+                    <div id="toggleIcon" className={`${toggleIcon} ${props.class}`} onClick={() => toggleMenu()}>
                         <span></span>
                         <span></span>
                         <span></span>

@@ -221,6 +221,9 @@
   .toggleMenu span {
     background: $color1;
   }
+  .toggleMenu.about span {
+    background: $blanco;
+  }
   .menu_responsive{
     width: $home-band-responsive2-width;
   }
@@ -229,9 +232,6 @@
   .toggleMenu_box{
     top: 25px;
     right: 25px;
-  }
-  .toggleMenu span {
-    background: $color1;
   }
   .menu_responsive{
     width: $home-band-responsive2-width;

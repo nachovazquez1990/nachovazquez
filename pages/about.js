@@ -1,4 +1,5 @@
 import styles from '../styles/About.module.scss';
+import menuStyles from '../components/shared/Menu/Menu.module.scss';
 
 import SEO from '../components/shared/SEO/SEO';
 import Menu from '../components/shared/Menu/Menu';
@@ -11,7 +12,7 @@ export default function About() {
                 title="About"
                 description="Nacho Vázquez' contact page"
             />
-            <Menu />
+            <Menu class={menuStyles.about} />
             <Main />
         </div>
     )
