@@ -3,6 +3,7 @@
 .main{
     display: grid;
     grid-template-columns: auto $home-band-width;
+    height: 100vh;
 }
 
 @media (max-width: 1300px) {

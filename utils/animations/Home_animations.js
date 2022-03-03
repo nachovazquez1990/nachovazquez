@@ -34,7 +34,7 @@ export function exitMainAnimation(
   contentStyles
 ) {
   let timeline = anime.timeline({
-    easing: 'easeInOutQuint',
+    easing: 'easeOutSine',
     duration: 320
   });
 

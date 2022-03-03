@@ -1,0 +1,32 @@
+@import '../../../styles/variables.scss';
+
+.main{
+    display: grid;
+    grid-template-columns: auto $about-band-width;
+    height: 100vh;
+}
+@media (max-width: 1919px) {
+    .main{
+        grid-template-columns: auto $about-band-responsive1-width;
+    }
+}
+@media (max-width: 1480px) {
+    .main{
+        grid-template-columns: auto $about-band-responsive2-width;
+    }
+}
+@media (max-width: 1200px) {
+    .main{
+        grid-template-columns: auto $about-band-responsive3-width;
+    }
+}
+@media (max-width: 850px) {
+    .main{
+        grid-template-columns: auto $about-band-responsive4-width;
+    }
+}
+@media (max-width: 600px) {
+    .main{
+        grid-template-columns: auto $about-band-responsive5-width;
+    }
+}

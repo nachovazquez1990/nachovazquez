@@ -1,13 +1,13 @@
 import styles from '../styles/Home.module.scss';
 
-import Head from '../components/shared/SEO/SEO';
+import SEO from '../components/shared/SEO/SEO';
 import Menu from '../components/shared/Menu/Menu';
 import Main from '../components/Home/Main/Main';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head
+      <SEO
         title="Home"
         description="Nacho Vázquez' contact page"
       />
