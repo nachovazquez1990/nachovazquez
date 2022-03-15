@@ -25,6 +25,30 @@
                 padding-top: 33px;
             }
         }
+        .text.dos{
+            top: auto;
+            bottom: 115px;
+            left: auto;
+            right: 85px;
+            p{
+                width: 700px;
+                font-size: 40px;
+                line-height: 45px;
+                padding-top: 33px;
+            }
+        }
+        .text.tres{
+            top: 150px;
+            bottom: auto;
+            left: 40px;
+            right: auto;
+            p{
+                width: 760px;
+                font-size: 42px;
+                line-height: 40px;
+                padding-top: 33px;
+            }
+        }
     }
     .image{
         position: absolute;
@@ -33,10 +57,22 @@
         height: 420px;
         width: 420px;
     }
+    .image.dos{
+        bottom: -15px;
+        left: -450px;
+        height: auto;
+        width: 600px;
+    }
+    .image.tres{
+        bottom: -25px;
+        left: -640px;
+        height: auto;
+        width: 1920px;
+    }
 }
 @media (max-width: 1919px) {
     .mainContent{
-        .band{
+        .band{  
             .text{
                 p{
                     width: 400px;
@@ -63,6 +99,18 @@
                     padding-top: 33px;
                 }
             }
+            .text.dos{
+                top: auto;
+                bottom: 115px;
+                left: 50px;
+                right: auto;
+                p{
+                    width: 500px;
+                    font-size: 30px;
+                    line-height: 35px;
+                    padding-top: 0px;
+                }
+            }
         }
     }
 }
@@ -84,6 +132,17 @@
                     margin-left: 70px;
                 }
             }
+            .text.dos{
+                top: auto;
+                bottom: 170px;
+                left: -40px;
+                right: auto;
+                p{
+                    width: 350px;
+                    font-size: 25px;
+                    line-height: 28px;
+                }
+            }
         }
     }
 }
@@ -100,6 +159,17 @@
                     width: 200px;
                     font-size: 16px;
                     line-height: 20px;
+                }
+            }
+            .text.dos{
+                top: auto;
+                bottom: 170px;
+                left: -55px;
+                right: auto;
+                p{
+                    width: 250px;
+                    font-size: 20px;
+                    line-height: 22px;
                 }
             }
         }
@@ -121,12 +191,29 @@
                     margin-left: 5px;
                 }
             }
+            .text.dos{
+                top: 110px;
+                bottom: auto;
+                left: 5px;
+                right: auto;
+                p{
+                    width: 150px;
+                    font-size: 19px;
+                    line-height: 20px;
+                }
+            }
         }
         .image{
             bottom: 50px;
             left: -215px;
             height: 300px;
             width: 300px;
+        }
+        .image.dos{
+            bottom: 50px;
+            left: -220px;
+            height: 270px;
+            width: 400px;
         }
     }
 }

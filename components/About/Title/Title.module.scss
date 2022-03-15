@@ -25,6 +25,35 @@
         }
     }
 }
+.title.dos{
+    right: auto;
+    left: $about-x-margin;
+    h2{
+        font-size: 157px;
+        line-height: 110px;
+        span{
+            font-size: 134px;
+        }
+    }
+}
+.title.tres{
+    h2{
+        font-size: 141px;
+        line-height: 97px;
+        span{
+            font-size: 141px;
+        }
+    }
+}
+@media (max-width: 1535px) {
+    .title.dos{
+        h2{
+            span{
+                font-size: 118px;
+            }
+        }
+    }
+}
 @media (max-width: 1480px) {
     .title{
         h1{
@@ -35,6 +64,48 @@
             font-size: 120px;
             margin-left: -5px;
             line-height: 95px;
+        }
+    }
+}
+@media (max-width: 1310px) {
+    .title.dos{
+        h2{
+            font-size: 120px;
+            line-height: 72px;
+            span{
+                font-size: 90px;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .title.dos{
+        right: auto;
+        left: $about-x-margin;
+        h1{
+            margin-bottom: 10px;
+        }
+        h2{
+            font-size: 157px;
+            line-height: 98px;
+            span{
+                font-size: 120px;
+            }
+        }
+    }
+}
+@media (max-width: 1020px) {
+    .title.dos{
+        h1{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        h2{
+            font-size: 114px;
+            line-height: 69px;
+            span{
+                font-size: 85px;
+            }
         }
     }
 }
@@ -52,6 +123,23 @@
         }
     }
 }
+@media (max-width: 730px) {
+    .title.dos{
+        right: auto;
+        left: 15px;
+        h1{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        h2{
+            font-size: 90px;
+            line-height: 55px;
+            span{
+                font-size: 68px;
+            }
+        }
+    }
+}
 @media (max-width: 600px) {
     .title{
         h1{
@@ -62,6 +150,26 @@
             font-size: 45px;
             margin-left: 0px;
             line-height: 35px;
+        }
+    }
+    .title.dos{
+        h2{
+            margin-left: -2px;
+        }
+    }
+}
+@media (max-width: 470px) {
+    .title.dos{
+        h1{
+            font-size: 22px;
+            margin-bottom: 2px;
+        }
+        h2{
+            font-size: 50px;
+            line-height: 32px;
+            span{
+                font-size: 38px;
+            }
         }
     }
 }
