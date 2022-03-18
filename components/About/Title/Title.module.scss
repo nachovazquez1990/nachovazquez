@@ -37,11 +37,12 @@
     }
 }
 .title.tres{
+    left: $about-x-margin;
     h2{
-        font-size: 141px;
-        line-height: 97px;
+        font-size: 135px;
+        line-height: 105px;
         span{
-            font-size: 141px;
+            font-size: 150px;
         }
     }
 }
@@ -64,6 +65,17 @@
             font-size: 120px;
             margin-left: -5px;
             line-height: 95px;
+        }
+    }
+}
+@media (max-width: 1340px) {
+    .title.tres{
+        h2{
+            font-size: 100px;
+            line-height: 75px;
+            span{
+                font-size: 115px;
+            }
         }
     }
 }
@@ -108,6 +120,15 @@
             }
         }
     }
+    .title.tres{
+        h2{
+            font-size: 100px;
+            line-height: 80px;
+            span{
+                font-size: 110px;
+            }
+        }
+    }
 }
 @media (max-width: 850px) {
     .title{
@@ -120,6 +141,15 @@
             font-size: 70px;
             margin-left: -4px;
             line-height: 55px;
+        }
+    }
+    .title.tres{
+        h2{
+            font-size: 90px;
+            line-height: 70px;
+            span{
+                font-size: 100px;
+            }
         }
     }
 }
@@ -139,6 +169,17 @@
             }
         }
     }
+    .title.tres{
+        right: auto;
+        left: 15px;
+            h2{
+                font-size: 75px;
+                line-height: 60px;
+                span{
+                    font-size: 85px;
+                }
+            }
+    }
 }
 @media (max-width: 600px) {
     .title{
@@ -157,6 +198,15 @@
             margin-left: -2px;
         }
     }
+    .title.tres{
+        h2{
+            font-size: 70px;
+            line-height: 60px;
+            span{
+                font-size: 90px;
+            }
+        }
+    }
 }
 @media (max-width: 470px) {
     .title.dos{
@@ -169,6 +219,15 @@
             line-height: 32px;
             span{
                 font-size: 38px;
+            }
+        }
+    }
+    .title.tres{
+        h2{
+            font-size: 42px;
+            line-height: 38px;
+            span{
+                font-size: 55px;
             }
         }
     }

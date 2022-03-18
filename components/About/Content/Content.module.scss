@@ -65,9 +65,10 @@
     }
     .image.tres{
         bottom: -25px;
-        left: -640px;
+        left: auto;
+        right: 0;
         height: auto;
-        width: 1920px;
+        width: 100vw;
     }
 }
 @media (max-width: 1919px) {
@@ -111,6 +112,14 @@
                     padding-top: 0px;
                 }
             }
+            .text.tres{
+                p{
+                    width: 500px;
+                    font-size: 34px;
+                    line-height: 36px;
+                    padding-top: 0px;
+                }
+            }
         }
     }
 }
@@ -143,6 +152,17 @@
                     line-height: 28px;
                 }
             }
+            .text.tres{
+                top: 160px;
+                bottom: auto;
+                left: -45px;
+                right: auto;
+                p{
+                    width: 350px;
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
         }
     }
 }
@@ -172,6 +192,18 @@
                     line-height: 22px;
                 }
             }
+            .text.tres{
+                top: 190px;
+                p{
+                    width: 260px;
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+            }
+        }
+        .image.tres{
+            width: 1500px;
+            right: -350px;
         }
     }
 }
@@ -192,13 +224,22 @@
                 }
             }
             .text.dos{
-                top: 110px;
+                top: 170px;
                 bottom: auto;
                 left: 5px;
                 right: auto;
                 p{
                     width: 150px;
-                    font-size: 19px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .text.tres{
+                top: 190px;
+                left: 5px;
+                p{
+                    width: 150px;
+                    font-size: 16px;
                     line-height: 20px;
                 }
             }
@@ -210,10 +251,14 @@
             width: 300px;
         }
         .image.dos{
-            bottom: 50px;
-            left: -220px;
+            bottom: 40px;
+            left: -264px;
             height: 270px;
-            width: 400px;
+            width: 390px;
+        }
+        .image.tres{
+            width: 1380px;
+            right: -680px;
         }
     }
 }
