@@ -1,0 +1,19 @@
+@import '../../../styles/variables.scss';
+
+.title {
+    padding: 150px $body-x-margin;
+    text-transform: uppercase;
+
+    .questionWord {
+        color: $color1;
+        font-size: 100px;
+        font-weight: 600;
+        line-height: 78px;
+    }
+
+    .answer {
+        font-size: 150px;
+        font-weight: 600;
+        color: $color2;
+    }
+}

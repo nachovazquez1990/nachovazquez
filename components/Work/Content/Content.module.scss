@@ -1,0 +1,20 @@
+@import '../../../styles/variables.scss';
+.content{
+    background-color: $color1;
+    .text{
+        margin-top: 200px;
+        margin-left: 70px;
+        width: 620px;
+        h3{
+            font-size: 100px;
+            color: white;
+            text-transform: uppercase;
+            line-height: 85px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 24px;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+import { useState, useEffect } from 'react';
+
+import mainStyles from './Main.module.scss';
+import listStyles from '../List/List.module.scss';
+import contentStyles from '../Content/Content.module.scss';
+import menuStyles from '../../shared/Menu/Menu.module.scss';
+import List from '../List/List';
+import Content from '../Content/Content';
+import ITEMS from '../../../api/work.json';
+const WorkAnimations = require('../../../utils/animations/Work_animations');
+
+export default function Main() {
+
+    useEffect(() => {
+        WorkAnimations.startWorkAnimation(listStyles.title, listStyles.bar, listStyles.workItem, contentStyles.content, menuStyles.menu);
+    }, []);
+
+
+    const [mainPosition, setMainPosition] = useState(0);
+    function changeMainPosition(newPosition) {
+        if (newPosition - 1 !== mainPosition) {
+            WorkAnimations.changeItemAnimation(
+                listStyles.bar,
+                listStyles.time,
+                contentStyles.text,
+                setMainPosition,
+                newPosition
+            )
+        }
+    }
+    return (
+        <div className={mainStyles.main}>
+            <List
+                list={ITEMS.work_en}
+                mainPosition={mainPosition}
+                changeMainPosition={changeMainPosition}
+            />
+
+            <Content
+                id={ITEMS.work_en[mainPosition].id}
+                title={ITEMS.work_en[mainPosition].title}
+                content={ITEMS.work_en[mainPosition].content}
+            />
+        </div>
+    )
+}

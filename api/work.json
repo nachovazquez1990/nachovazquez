@@ -1,0 +1,66 @@
+{
+    "work_en": [
+        {
+            "id": 1,
+            "title": "Spinmedia",
+            "time": "21-22",
+            "content": "la tortor blandit tortor, ut vehicula magna arcu non nibh. Sed eget suscipit velit, sed varius elit. Fusce quis dapibus quam, at placerat dui. Fusce ac ex quis nulla ultrices fringilla et sed quam. Maecenas finibus dui id ipsum feugiat cursus. Donec risus odio, ornare sit amet consectetur eu, commodo vitae turpis."
+        },
+        {
+            "id": 2,
+            "title": "Freelance",
+            "time": "17-21",
+            "content": "la tortor blandit tortor, ut vehicula magna arcu non nibh. Sed eget suscipit velit, sed varius elit. Fusce quis dapibus quam, at placerat dui. Fusce ac ex quis nulla ultrices fringilla et sed quam. Maecenas finibus dui id ipsum feugiat cursus. Donec risus odio, ornare sit amet consectetur eu, commodo vitae turpis."
+        },
+        {
+            "id": 3,
+            "title": "Adams",
+            "time": "14-15",
+            "content": "la tortor blandit tortor, ut vehicula magna arcu non nibh. Sed eget suscipit velit, sed varius elit. Fusce quis dapibus quam, at placerat dui. Fusce ac ex quis nulla ultrices fringilla et sed quam. Maecenas finibus dui id ipsum feugiat cursus. Donec risus odio, ornare sit amet consectetur eu, commodo vitae turpis."
+        },
+        {
+            "id": 4,
+            "title": "Rocaviva",
+            "time": "13-21",
+            "content": "la tortor blandit tortor, ut vehicula magna arcu non nibh. Sed eget suscipit velit, sed varius elit. Fusce quis dapibus quam, at placerat dui. Fusce ac ex quis nulla ultrices fringilla et sed quam. Maecenas finibus dui id ipsum feugiat cursus. Donec risus odio, ornare sit amet consectetur eu, commodo vitae turpis."
+        },
+        {
+            "id": 5,
+            "title": "F.Ortega y Gasset",
+            "time": "12-13",
+            "content": "la tortor blandit tortor, ut vehicula magna arcu non nibh. Sed eget suscipit velit, sed varius elit. Fusce quis dapibus quam, at placerat dui. Fusce ac ex quis nulla ultrices fringilla et sed quam. Maecenas finibus dui id ipsum feugiat cursus. Donec risus odio, ornare sit amet consectetur eu, commodo vitae turpis."
+        }
+    ],
+    "work_es": [
+        {
+            "id": 1,
+            "title": "Spinmedia",
+            "time": "21-22",
+            "content": "la tortor blandit tortor, ut vehicula magna arcu non nibh. Sed eget suscipit velit, sed varius elit. Fusce quis dapibus quam, at placerat dui. Fusce ac ex quis nulla ultrices fringilla et sed quam. Maecenas finibus dui id ipsum feugiat cursus. Donec risus odio, ornare sit amet consectetur eu, commodo vitae turpis."
+        },
+        {
+            "id": 2,
+            "title": "Freelance",
+            "time": "17-21",
+            "content": "la tortor blandit tortor, ut vehicula magna arcu non nibh. Sed eget suscipit velit, sed varius elit. Fusce quis dapibus quam, at placerat dui. Fusce ac ex quis nulla ultrices fringilla et sed quam. Maecenas finibus dui id ipsum feugiat cursus. Donec risus odio, ornare sit amet consectetur eu, commodo vitae turpis."
+        },
+        {
+            "id": 3,
+            "title": "Adams",
+            "time": "14-15",
+            "content": "la tortor blandit tortor, ut vehicula magna arcu non nibh. Sed eget suscipit velit, sed varius elit. Fusce quis dapibus quam, at placerat dui. Fusce ac ex quis nulla ultrices fringilla et sed quam. Maecenas finibus dui id ipsum feugiat cursus. Donec risus odio, ornare sit amet consectetur eu, commodo vitae turpis."
+        },
+        {
+            "id": 4,
+            "title": "Rocaviva",
+            "time": "13-21",
+            "content": "la tortor blandit tortor, ut vehicula magna arcu non nibh. Sed eget suscipit velit, sed varius elit. Fusce quis dapibus quam, at placerat dui. Fusce ac ex quis nulla ultrices fringilla et sed quam. Maecenas finibus dui id ipsum feugiat cursus. Donec risus odio, ornare sit amet consectetur eu, commodo vitae turpis."
+        },
+        {
+            "id": 5,
+            "title": "F.Ortega y Gasset",
+            "time": "12-13",
+            "content": "la tortor blandit tortor, ut vehicula magna arcu non nibh. Sed eget suscipit velit, sed varius elit. Fusce quis dapibus quam, at placerat dui. Fusce ac ex quis nulla ultrices fringilla et sed quam. Maecenas finibus dui id ipsum feugiat cursus. Donec risus odio, ornare sit amet consectetur eu, commodo vitae turpis."
+        }
+    ]
+}
