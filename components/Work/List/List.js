@@ -13,7 +13,7 @@ export default function List(props) {
                     <div className={styles.bar}></div>
                     {props.list.map(item => {
                         return (
-                            <div className={styles.workItem} onClick={() => props.changeMainPosition(item.id)}>
+                            <div key={item.id} className={styles.workItem} onClick={() => props.changeMainPosition(item.id)}>
                                 <p className={styles.time}>{item.time}</p>
                                 <h3>{item.title}</h3>
                             </div>
