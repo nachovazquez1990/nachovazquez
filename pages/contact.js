@@ -12,7 +12,7 @@ export default function Contact() {
                 title="Contact"
                 description="Nacho Vázquez' contact page"
             />
-            <Menu />
+            <Menu class={menuStyles.contact} />
             <Main />
         </div>
     )

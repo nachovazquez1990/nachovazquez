@@ -6,7 +6,7 @@ import contentStyles from '../Content/Content.module.scss';
 import menuStyles from '../../shared/Menu/Menu.module.scss';
 import List from '../List/List';
 import Content from '../Content/Content';
-import ITEMS from '../../../api/work.json';
+import ITEMS from '../../../data/work.json';
 const WorkAnimations = require('../../../utils/animations/Work_animations');
 
 export default function Main() {

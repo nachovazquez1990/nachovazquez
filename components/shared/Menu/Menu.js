@@ -32,7 +32,7 @@ export default function Menu(props) {
                         ITEMS.menu_en.map(menuItem =>
                             <li key={menuItem.id}>
                                 <Link href={menuItem.link}>
-                                    <a className={router.pathname == `${menuItem.link}` ? `${styles.active}` : ""}>{menuItem.item}</a>
+                                    <a className={router.pathname == `${menuItem.link}` ? `${styles.active}` : `${props.class}`}>{menuItem.item}</a>
                                 </Link>
                             </li>
                         )

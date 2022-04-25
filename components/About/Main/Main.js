@@ -8,7 +8,7 @@ import paginationStyles from '../../shared/Pagination/Pagination.module.scss';
 import Content from '../Content/Content';
 import Title from '../Title/Title';
 import Pagination from '../../shared/Pagination/Pagination';
-import ITEMS from '../../../api/about.json';
+import ITEMS from '../../../data/about.json';
 const AboutAnimations = require('../../../utils/animations/About_animations');
 
 export default function Main() {
