@@ -3,7 +3,7 @@ import { useState, Fragment } from 'react';
 import { useRouter } from "next/router";
 
 import styles from './Menu.module.scss';
-import ITEMS from '../../../api/menu.json';
+import ITEMS from '../../../data/menu.json';
 
 export default function Menu(props) {
     const router = useRouter();
