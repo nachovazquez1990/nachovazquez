@@ -45,7 +45,7 @@ export function changeItemAnimation(
   timeline
     .add({
       targets: `.${bar}`,
-      width: '0%'
+      width: '13%'
     })
     .add({
       targets: `.${content}`,

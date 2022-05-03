@@ -1,0 +1,47 @@
+@import '../../../styles/variables.scss';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color1;
+
+    .fieldBox {
+        width: 80%;
+        margin-bottom: 20px;
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            label {
+                color: white;
+                font-size: 50px;
+            }
+
+            input {
+                border: 1px solid rgb(180, 180, 180);
+                border-radius: 5px;
+                height: 70px;
+                padding: 0 10px;
+                font-size: 30px;
+                color: $negro;
+            }
+        }
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 70px;
+        border: 1px solid $negro;
+        border-radius: 5px;
+        background-color: $color3;
+        cursor: pointer;
+        font-size: 50px;
+    }
+}

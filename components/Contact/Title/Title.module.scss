@@ -9,11 +9,14 @@
         font-size: 100px;
         font-weight: 600;
         line-height: 78px;
+        opacity: 0;
     }
 
     .answer {
         font-size: 150px;
         font-weight: 600;
         color: $color2;
+        opacity: 0;
+
     }
 }

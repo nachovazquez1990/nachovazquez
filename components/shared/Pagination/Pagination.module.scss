@@ -1,9 +1,11 @@
 @import '../../../styles/variables.scss';
-.pagination{
+
+.pagination {
     position: absolute;
     bottom: 50px;
     left: $body-x-margin;
-    span{
+
+    span {
         height: 35px;
         width: 35px;
         border: 4px solid $color1;
@@ -12,22 +14,26 @@
         margin-right: 20px;
         cursor: pointer;
     }
-    .active{
+
+    .active {
         background-color: $color1;
     }
 }
+
 @media (max-width: 1080px) {
     .pagination {
         bottom: auto;
-        top: 30px;
+        top: 65px;
+        left: $body-x-margin-responsive;
     }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 700px) {
     .pagination {
         bottom: auto;
         top: 30px;
-        left: $body-x-margin-responsive;
-        span{
+
+        span {
             height: 25px;
             width: 25px;
         }

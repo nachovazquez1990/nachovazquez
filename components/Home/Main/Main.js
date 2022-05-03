@@ -9,7 +9,7 @@ import Content from '../Content/Content';
 import Title from '../Title/Title';
 import Pagination from '../../shared/Pagination/Pagination';
 import ITEMS from '../../../data/main.json';
-const HomeAnimations = require('../../../utils/animations/Home_animations');
+const HomeAnimations = require('../../../animations/Home_animations');
 
 export default function Main() {
     useEffect(() => {

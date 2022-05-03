@@ -27,7 +27,7 @@ export default function Menu(props) {
                     <li><a className={styles.selected}>ENG</a></li>
                     <li><a>SPA</a></li>
                 </ul>
-                <ul className={styles.pages}>
+                <ul className={`${styles.pages} ${props.mainClass}`}>
                     {
                         ITEMS.menu_en.map(menuItem =>
                             <li key={menuItem.id}>
