@@ -1,24 +1,24 @@
 import { useState, useEffect } from 'react';
 
-import mainStyles from './Main.module.scss';
-import titleStyles from '../Title/Title.module.scss';
-import contentStyles from '../Content/Content.module.scss';
-import menuStyles from '../../shared/Menu/Menu.module.scss';
-import paginationStyles from '../../shared/Pagination/Pagination.module.scss';
-import Content from '../Content/Content';
-import Title from '../Title/Title';
-import Pagination from '../../shared/Pagination/Pagination';
-import ITEMS from '../../../data/about.json';
-const AboutAnimations = require('../../../animations/About_animations');
+import aboutStyles from './About.module.scss';
+import titleStyles from './Title/Title.module.scss';
+import contentStyles from './Content/Content.module.scss';
+import menuStyles from '../shared/Menu/Menu.module.scss';
+import paginationStyles from '../shared/Pagination/Pagination.module.scss';
+import Content from './Content/Content';
+import Title from './Title/Title';
+import Pagination from '../shared/Pagination/Pagination';
+import ITEMS from '../../data/about.json';
+const AboutAnimations = require('../../animations/About_animations');
 
 export default function Main() {
     const [mainPosition, setMainPosition] = useState(0);
     const [positionTitleStyle, setPositionTitleStyle] = useState(titleStyles.uno);
     const [positionContentStyle, setPositionContentStyle] = useState(contentStyles.uno);
 
-    let image1 = require('../../../public/assets/about/1.png');
-    let image2 = require('../../../public/assets/about/2.png');
-    let image3 = require('../../../public/assets/about/3.png');
+    let image1 = require('../../public/assets/about/1.png');
+    let image2 = require('../../public/assets/about/2.png');
+    let image3 = require('../../public/assets/about/3.png');
     const [image, setImage] = useState(image1);
 
     useEffect(() => {
@@ -46,24 +46,24 @@ export default function Main() {
     }
 
     return (
-        <div className={mainStyles.main}>
+        <div className={aboutStyles.main}>
             <Title
-                id={ITEMS.about_en[mainPosition].id}
-                title1={ITEMS.about_en[mainPosition].title1}
-                title2={ITEMS.about_en[mainPosition].title2}
+                id={ITEMS.eng[mainPosition].id}
+                title1={ITEMS.eng[mainPosition].title1}
+                title2={ITEMS.eng[mainPosition].title2}
                 positionTitleStyle={positionTitleStyle}
             />
 
             <Content
-                id={ITEMS.about_en[mainPosition].id}
-                contentTitle={ITEMS.about_en[mainPosition].contentTitle}
-                content={ITEMS.about_en[mainPosition].content}
+                id={ITEMS.eng[mainPosition].id}
+                contentTitle={ITEMS.eng[mainPosition].contentTitle}
+                content={ITEMS.eng[mainPosition].content}
                 positionContentStyle={positionContentStyle}
                 image={image}
             />
 
             <Pagination
-                ITEMS={ITEMS.about_en}
+                ITEMS={ITEMS.eng}
                 mainPosition={mainPosition + 1}
                 handlePosition={handlePosition}
             />

@@ -18,7 +18,7 @@ export default function Form() {
                 </div>
                 <div className={styles.field}>
                     <label for="subject">Subject:</label>
-                    <input id="subject" type="text"></input>
+                    <textarea id="subject" type="text"></textarea>
                 </div>
             </div>
             <div className={styles.button}>SEND</div>

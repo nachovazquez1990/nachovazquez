@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 
-import mainStyles from './Main.module.scss';
-import titleStyles from '../Title/Title.module.scss';
-import contentStyles from '../Content/Content.module.scss';
-import menuStyles from '../../shared/Menu/Menu.module.scss';
-import paginationStyles from '../../shared/Pagination/Pagination.module.scss';
-import Content from '../Content/Content';
-import Title from '../Title/Title';
-import Pagination from '../../shared/Pagination/Pagination';
-import ITEMS from '../../../data/main.json';
-const HomeAnimations = require('../../../animations/Home_animations');
+import homeStyles from './Home.module.scss';
+import titleStyles from './Title/Title.module.scss';
+import contentStyles from './Content/Content.module.scss';
+import menuStyles from '../shared/Menu/Menu.module.scss';
+import paginationStyles from '../shared/Pagination/Pagination.module.scss';
+import Content from './Content/Content';
+import Title from './Title/Title';
+import Pagination from '../shared/Pagination/Pagination';
+import ITEMS from '../../data/main.json';
+const HomeAnimations = require('../../animations/Home_animations');
 
 export default function Main() {
     useEffect(() => {
@@ -34,22 +34,22 @@ export default function Main() {
         );
     }
     return (
-        <div className={mainStyles.main}>
+        <div className={homeStyles.main}>
             <Title
-                id={ITEMS.main_en[mainPosition].id}
-                title1={ITEMS.main_en[mainPosition].title1}
-                title2={ITEMS.main_en[mainPosition].title2}
+                id={ITEMS.eng[mainPosition].id}
+                title1={ITEMS.eng[mainPosition].title1}
+                title2={ITEMS.eng[mainPosition].title2}
                 positionTitleStyle={positionTitleStyle}
             />
 
             <Content
-                id={ITEMS.main_en[mainPosition].id}
-                contentTitle={ITEMS.main_en[mainPosition].contentTitle}
-                content={ITEMS.main_en[mainPosition].content}
+                id={ITEMS.eng[mainPosition].id}
+                contentTitle={ITEMS.eng[mainPosition].contentTitle}
+                content={ITEMS.eng[mainPosition].content}
                 positionContentStyle={positionContentStyle}
             />
             <Pagination
-                ITEMS={ITEMS.main_en}
+                ITEMS={ITEMS.eng}
                 mainPosition={mainPosition + 1}
                 handlePosition={handlePosition}
             />

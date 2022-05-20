@@ -1,9 +1,9 @@
-import styles from '../styles/Contact.module.scss';
+import styles from '../styles/Container.module.scss';
 import menuStyles from '../components/shared/Menu/Menu.module.scss';
 
 import SEO from '../components/shared/SEO/SEO';
 import Menu from '../components/shared/Menu/Menu';
-import Main from '../components/Contact/Main/Main';
+import Main from '../components/Contact/Contact';
 
 export default function Contact() {
     return (

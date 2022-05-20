@@ -21,6 +21,7 @@
 
     .workList {
         position: relative;
+        z-index: -1;
 
         .bar {
             background-color: $color3;

@@ -1,5 +1,5 @@
 {
-    "menu_en": [
+    "eng": [
         {
             "id": 1,
             "item": "Home",
@@ -21,7 +21,7 @@
             "link": "/contact"
         }
     ],
-    "menu_es": [
+    "spa": [
         {
             "id": 1,
             "item": "Inicio",

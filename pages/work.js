@@ -1,9 +1,9 @@
-import styles from '../styles/Work.module.scss';
+import styles from '../styles/Container.module.scss';
 import menuStyles from '../components/shared/Menu/Menu.module.scss';
 
 import SEO from '../components/shared/SEO/SEO';
 import Menu from '../components/shared/Menu/Menu';
-import Main from '../components/Work/Main/Main';
+import Main from '../components/Work/Work';
 
 export default function Work() {
     return (
@@ -12,7 +12,7 @@ export default function Work() {
                 title="Work"
                 description="Nacho Vázquez' contact page"
             />
-            <Menu class={menuStyles.about} />
+            <Menu />
             <Main />
         </div>
     )

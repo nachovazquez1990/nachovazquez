@@ -29,7 +29,7 @@ export default function Menu(props) {
                 </ul>
                 <ul className={`${styles.pages} ${props.mainClass}`}>
                     {
-                        ITEMS.menu_en.map(menuItem =>
+                        ITEMS.eng.map(menuItem =>
                             <li key={menuItem.id}>
                                 <Link href={menuItem.link}>
                                     <a className={router.pathname == `${menuItem.link}` ? `${styles.active}` : `${props.class}`}>{menuItem.item}</a>
@@ -53,7 +53,7 @@ export default function Menu(props) {
 
                 <ul className={toggleBox}>
                     {
-                        ITEMS.menu_en.map(menuItem =>
+                        ITEMS.eng.map(menuItem =>
                             <li key={menuItem.id} onClick={() => toggleMenu()}>
                                 <Link href={menuItem.link}>
                                     <a>{menuItem.item}</a>

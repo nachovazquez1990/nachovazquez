@@ -1,19 +1,20 @@
-@import '../../../styles/variables.scss';
+@import '../../styles/variables.scss';
 
-.main{
+.main {
     display: grid;
     grid-template-columns: auto $home-band-width;
     height: 100vh;
 }
 
 @media (max-width: 1300px) {
-    .main{
+    .main {
         grid-template-columns: auto $home-band-responsive1-width;
     }
 }
+
 @media (max-width: 1080px) {
-    .main{
+    .main {
         grid-template-columns: $home-band-responsive2-width;
-        grid-template-rows: repeat(2,50vh);
+        grid-template-rows: repeat(2, 50vh);
     }
 }

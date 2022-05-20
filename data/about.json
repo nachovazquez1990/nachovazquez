@@ -1,5 +1,5 @@
 {
-    "about_en": [
+    "eng": [
         {
             "id": 1,
             "title1": "Madrid,",
@@ -22,7 +22,7 @@
             "content": "la tortor blandit tortor, ut vehicula magna arcu non nibh. Sed eget suscipit velit, sed varius elit. Fusce quis dapibus quam, at placerat dui. Fusce ac ex quis nulla ultrices fringilla et sed quam. Maecenas finibus dui id ipsum feugiat cursus. Donec risus odio, ornare sit amet consectetur eu, commodo vitae turpis."
         }
     ],
-    "about_es": [
+    "spa": [
         {
             "id": 1,
             "title1": "Diseño",

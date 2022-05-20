@@ -18,7 +18,8 @@
 
             label {
                 color: white;
-                font-size: 50px;
+                font-size: 20px;
+                margin-bottom: 5px;
             }
 
             input {
@@ -29,6 +30,16 @@
                 font-size: 30px;
                 color: $negro;
             }
+
+            textarea {
+                border: 1px solid rgb(180, 180, 180);
+                border-radius: 5px;
+                height: 150px;
+                padding: 10px;
+                font-size: 30px;
+                color: $negro;
+                resize: none;
+            }
         }
     }
 
@@ -36,12 +47,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        height: 70px;
+        width: 25%;
+        height: 50px;
         border: 1px solid $negro;
         border-radius: 5px;
         background-color: $color3;
         cursor: pointer;
-        font-size: 50px;
+        font-size: 20px;
     }
 }
