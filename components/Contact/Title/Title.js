@@ -12,7 +12,7 @@ export default function Title() {
                 {
                     question1.map(word => {
                         return (
-                            <p key={word.id} className={styles.questionWord}>{word}</p>
+                            <p key={word} className={styles.questionWord}>{word}</p>
                         )
                     })
                 }

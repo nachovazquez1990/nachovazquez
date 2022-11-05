@@ -5,19 +5,19 @@ export default function Form() {
         <div className={styles.form}>
             <div className={styles.fieldBox}>
                 <div className={styles.field}>
-                    <label for="name">Name:</label>
+                    <label htmlFor="name">Name:</label>
                     <input id="name" type="text"></input>
                 </div>
                 <div className={styles.field}>
-                    <label for="company">Company:</label>
+                    <label htmlFor="company">Company:</label>
                     <input id="company" type="text"></input>
                 </div>
                 <div className={styles.field}>
-                    <label for="email">Email:</label>
+                    <label htmlFor="email">Email:</label>
                     <input id="email" type="email"></input>
                 </div>
                 <div className={styles.field}>
-                    <label for="subject">Subject:</label>
+                    <label htmlFor="subject">Subject:</label>
                     <textarea id="subject" type="text"></textarea>
                 </div>
             </div>
