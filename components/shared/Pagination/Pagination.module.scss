@@ -23,15 +23,8 @@
 @media (max-width: 1080px) {
     .pagination {
         bottom: auto;
-        top: 65px;
-        left: $body-x-margin-responsive;
-    }
-}
-
-@media (max-width: 700px) {
-    .pagination {
-        bottom: auto;
         top: 30px;
+        left: $body-x-margin-responsive;
 
         span {
             height: 25px;

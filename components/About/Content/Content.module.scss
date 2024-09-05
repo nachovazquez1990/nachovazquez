@@ -1,7 +1,9 @@
 @import '../../../styles/variables.scss';
-.mainContent{
+
+.mainContent {
     position: relative;
-    .band{
+
+    .band {
         position: absolute;
         top: 0;
         right: 0;
@@ -9,40 +11,47 @@
         width: 100%;
         background-color: $color1;
         color: white;
-        .text{
+
+        .text {
             position: absolute;
             display: flex;
             top: 210px;
             left: 10px;
-            h2{
+
+            h2 {
                 font-size: 156px;
                 text-transform: uppercase;
             }
-            p{
+
+            p {
                 width: 625px;
                 font-size: 48px;
                 line-height: 50px;
                 padding-top: 33px;
             }
         }
-        .text.dos{
+
+        .text.dos {
             top: auto;
             bottom: 115px;
             left: auto;
             right: 85px;
-            p{
+
+            p {
                 width: 700px;
                 font-size: 40px;
                 line-height: 45px;
                 padding-top: 33px;
             }
         }
-        .text.tres{
+
+        .text.tres {
             top: 150px;
             bottom: auto;
             left: 40px;
             right: auto;
-            p{
+
+            p {
                 width: 760px;
                 font-size: 42px;
                 line-height: 40px;
@@ -50,32 +59,53 @@
             }
         }
     }
-    .image{
+
+    .image {
         position: absolute;
         bottom: 90px;
         left: -225px;
         height: 420px;
         width: 420px;
     }
-    .image.dos{
-        bottom: -15px;
+
+    .image.dos {
+        bottom: -30px;
         left: -450px;
         height: auto;
         width: 600px;
     }
-    .image.tres{
-        bottom: -25px;
+
+    .image.tres {
+        bottom: -100px;
         left: auto;
         right: 0;
         height: auto;
         width: 100vw;
     }
 }
+
+@media (max-height: 850px) {
+    .mainContent {
+        .image {
+            bottom: -100px;
+        }
+
+        .image.dos {
+            bottom: -100px;
+            width: 500px;
+        }
+
+        .image.tres {
+            bottom: -170px;
+        }
+    }
+}
+
 @media (max-width: 1919px) {
-    .mainContent{
-        .band{  
-            .text{
-                p{
+    .mainContent {
+        .band {
+            .text {
+                p {
                     width: 400px;
                     font-size: 32px;
                     line-height: 30px;
@@ -85,35 +115,41 @@
         }
     }
 }
+
 @media (max-width: 1480px) {
-    .mainContent{
-        .band{
-            .text{
+    .mainContent {
+        .band {
+            .text {
                 top: 196px;
-                h2{
+
+                h2 {
                     font-size: 120px;
                 }
-                p{
+
+                p {
                     width: 400px;
                     font-size: 32px;
                     line-height: 30px;
                     padding-top: 33px;
                 }
             }
-            .text.dos{
+
+            .text.dos {
                 top: auto;
                 bottom: 115px;
                 left: 50px;
                 right: auto;
-                p{
+
+                p {
                     width: 500px;
                     font-size: 30px;
                     line-height: 35px;
                     padding-top: 0px;
                 }
             }
-            .text.tres{
-                p{
+
+            .text.tres {
+                p {
                     width: 500px;
                     font-size: 34px;
                     line-height: 36px;
@@ -123,16 +159,19 @@
         }
     }
 }
+
 @media (max-width: 1200px) {
-    .mainContent{
-        .band{
-            .text{
+    .mainContent {
+        .band {
+            .text {
                 top: 196px;
                 flex-direction: column;
-                h2{
+
+                h2 {
                     font-size: 120px;
                 }
-                p{
+
+                p {
                     width: 290px;
                     font-size: 18px;
                     line-height: 25px;
@@ -141,23 +180,27 @@
                     margin-left: 70px;
                 }
             }
-            .text.dos{
+
+            .text.dos {
                 top: auto;
                 bottom: 170px;
                 left: -40px;
                 right: auto;
-                p{
+
+                p {
                     width: 350px;
                     font-size: 25px;
                     line-height: 28px;
                 }
             }
-            .text.tres{
+
+            .text.tres {
                 top: 160px;
                 bottom: auto;
                 left: -45px;
                 right: auto;
-                p{
+
+                p {
                     width: 350px;
                     font-size: 30px;
                     line-height: 30px;
@@ -166,56 +209,67 @@
         }
     }
 }
+
 @media (max-width: 850px) {
-    .mainContent{
-        .band{
-            .text{
+    .mainContent {
+        .band {
+            .text {
                 top: 184px;
                 left: 5px;
-                h2{
+
+                h2 {
                     font-size: 70px;
                 }
-                p{
+
+                p {
                     width: 200px;
                     font-size: 16px;
                     line-height: 20px;
                 }
             }
-            .text.dos{
+
+            .text.dos {
                 top: auto;
                 bottom: 170px;
                 left: -55px;
                 right: auto;
-                p{
+
+                p {
                     width: 250px;
                     font-size: 20px;
                     line-height: 22px;
                 }
             }
-            .text.tres{
+
+            .text.tres {
                 top: 190px;
-                p{
+
+                p {
                     width: 260px;
                     font-size: 25px;
                     line-height: 25px;
                 }
             }
         }
-        .image.tres{
+
+        .image.tres {
             width: 1500px;
             right: -350px;
         }
     }
 }
+
 @media (max-width: 600px) {
-    .mainContent{
-        .band{
-            .text{
+    .mainContent {
+        .band {
+            .text {
                 top: 175px;
-                h2{
+
+                h2 {
                     font-size: 45px;
                 }
-                p{
+
+                p {
                     width: 140px;
                     font-size: 14px;
                     line-height: 16px;
@@ -223,43 +277,49 @@
                     margin-left: 5px;
                 }
             }
-            .text.dos{
+
+            .text.dos {
                 top: 170px;
                 bottom: auto;
                 left: 5px;
                 right: auto;
-                p{
+
+                p {
                     width: 150px;
                     font-size: 14px;
                     line-height: 20px;
                 }
             }
-            .text.tres{
+
+            .text.tres {
                 top: 100px;
                 left: 5px;
-                p{
+
+                p {
                     width: 150px;
                     font-size: 12px;
                     line-height: 20px;
                 }
             }
         }
-        .image{
+
+        .image {
             bottom: 50px;
             left: -215px;
             height: 300px;
             width: 300px;
         }
-        .image.dos{
+
+        .image.dos {
             bottom: 40px;
             left: -264px;
             height: 270px;
             width: 390px;
         }
-        .image.tres{
+
+        .image.tres {
             width: 1380px;
             right: -680px;
         }
     }
 }
-
