@@ -75,7 +75,7 @@
   right: 65px;
   width: 60px;
   height: 45px;
-  z-index: 20;
+  z-index: 9999;
 }
 
 .toggleMenu {
@@ -162,7 +162,7 @@
   height: 100vh;
   width: $home-band-width;
   background-color: $negro;
-  z-index: 10;
+  z-index: 950;
   -webkit-transition: .5s ease-in-out;
   -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
