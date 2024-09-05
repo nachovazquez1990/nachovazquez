@@ -45,7 +45,7 @@ export function changeItemAnimation(
   timeline
     .add({
       targets: `.${bar}`,
-      width: '13%'
+      width: '0%'
     })
     .add({
       targets: `.${content}`,
@@ -53,7 +53,7 @@ export function changeItemAnimation(
     }, '-=350')
     .add({
       targets: `.${bar}`,
-      translateY: (80 * (newPosition - 1)),
+      translateY: (58 * (newPosition - 1)),
       complete: function () {
         setMainPosition(newPosition - 1)
       }
