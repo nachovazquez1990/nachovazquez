@@ -53,7 +53,7 @@ export function changeItemAnimation(
     }, '-=350')
     .add({
       targets: `.${bar}`,
-      translateY: (58 * (newPosition - 1)),
+      translateY: (60 * (newPosition - 1)),
       complete: function () {
         setMainPosition(newPosition - 1)
       }
