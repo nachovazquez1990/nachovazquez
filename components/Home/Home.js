@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 import homeStyles from './Home.module.scss';
 import titleStyles from './Title/Title.module.scss';
@@ -34,7 +34,21 @@ export default function Main() {
         );
     }
 
-    const handleWheel = useCallback(async (event) => {
+    const isAnimating = useRef(false);
+
+    const totalPositions = 3;
+    const delay = 1000; // tiempo de bloqueo en ms
+
+    const startCooldown = () => {
+        isAnimating.current = true;
+        setTimeout(() => {
+            isAnimating.current = false;
+        }, delay);
+    };
+
+    const handleWheel = useCallback((event) => {
+        if (isAnimating.current) return;
+
         const wheelEvent = event.deltaY;
         let newPosition = mainPosition;
 
@@ -44,11 +58,9 @@ export default function Main() {
             newPosition = mainPosition - 1;
         }
 
-        if (newPosition < 0) {
-            newPosition = 2;
-        } else if (newPosition > 2) {
-            newPosition = 0;
-        }
+        newPosition = (newPosition + totalPositions) % totalPositions;
+
+        startCooldown();
 
         HomeAnimations.exitMainAnimation(
             titleStyles.title,
