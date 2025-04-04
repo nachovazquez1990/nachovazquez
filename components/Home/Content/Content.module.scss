@@ -29,7 +29,7 @@
             top: auto;
             bottom: -180px;
             right: auto;
-            left: -60px;
+            left: -90px;
         }
 
         .content {
@@ -219,7 +219,7 @@
             .number.dos {
                 font-size: 400px;
                 bottom: -100px;
-                right: -55px;
+                right: -90px;
             }
 
             .number.tres {
@@ -235,6 +235,49 @@
         .band {
             .number.tres {
                 font-size: 500px;
+            }
+        }
+    }
+}
+
+@media (max-height: 740px) and (max-width: 1080px) {
+    .mainContent {
+        .band {
+            .number {
+                top: -120px;
+                font-size: 500px;
+                right: -100px;
+            }
+
+            .number.dos {
+                top: -100px;
+                right: -65px;
+                font-size: 430px;
+            }
+
+            .content {
+                h3 {
+                    width: 200px;
+                    font-size: 65px;
+                    line-height: 45px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .content.dos {
+                h3 {
+                    width: 400px;
+                    font-size: 75px;
+                    line-height: 50px;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 15px;
+                }
             }
         }
     }
