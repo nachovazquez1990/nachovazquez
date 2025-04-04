@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 import homeStyles from './Home.module.scss';
 import titleStyles from './Title/Title.module.scss';
@@ -33,8 +33,39 @@ export default function Main() {
             contentStyles
         );
     }
+
+    const handleWheel = useCallback(async (event) => {
+        const wheelEvent = event.deltaY;
+        let newPosition = mainPosition;
+
+        if (wheelEvent > 0) {
+            newPosition = mainPosition + 1;
+        } else {
+            newPosition = mainPosition - 1;
+        }
+
+        if (newPosition < 0) {
+            newPosition = 2;
+        } else if (newPosition > 2) {
+            newPosition = 0;
+        }
+
+        HomeAnimations.exitMainAnimation(
+            titleStyles.title,
+            contentStyles.band,
+            menuStyles.menu,
+            paginationStyles.pagination,
+            setMainPosition,
+            newPosition,
+            setPositionTitleStyle,
+            setPositionContentStyle,
+            titleStyles,
+            contentStyles
+        );
+    }, [mainPosition, setMainPosition, setPositionTitleStyle, setPositionContentStyle, titleStyles, contentStyles, menuStyles, paginationStyles]);
+
     return (
-        <div className={homeStyles.main}>
+        <div className={homeStyles.main} onWheel={handleWheel} >
             <Title
                 id={ITEMS.eng[mainPosition].id}
                 title1={ITEMS.eng[mainPosition].title1}
