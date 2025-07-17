@@ -214,3 +214,37 @@
         top: 200px;
     }
 }
+
+@media (max-height: 750px) and (max-width: 1080px) {
+    .title {
+        top: 80px;
+
+        h1 {
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 100px;
+            line-height: 65px;
+        }
+
+        h2.dos {
+            font-size: 95px;
+            line-height: 65px;
+
+            span {
+                font-size: 109px;
+            }
+        }
+
+        h2.tres {
+            font-size: 100px;
+            line-height: 65px;
+
+            span {
+                font-size: 86px;
+            }
+        }
+    }
+}
