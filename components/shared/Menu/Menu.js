@@ -23,10 +23,10 @@ export default function Menu(props) {
     return (
         <Fragment>
             <nav className={styles.menu}>
-                <ul className={styles.langs}>
+                {/* <ul className={styles.langs}>
                     <li><a className={styles.selected}>ENG</a></li>
                     <li><a>SPA</a></li>
-                </ul>
+                </ul> */}
                 <ul className={`${styles.pages} ${props.mainClass}`}>
                     {
                         ITEMS.eng.map(menuItem =>
@@ -62,11 +62,11 @@ export default function Menu(props) {
                             </li>
                         )
                     }
-                    <div className={styles.idiomas}>
+                    {/* <div className={styles.idiomas}>
                         <p className={styles.selected}>ENG</p>
                         <span>-</span>
                         <p>SPA</p>
-                    </div>
+                    </div> */}
                 </ul>
             </nav>
         </Fragment>
